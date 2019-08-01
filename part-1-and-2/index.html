@@ -3,7 +3,17 @@
        <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.4/redux.min.js"></script>
         <script>
             
-            // Your code here...
+            const {createStore} = Redux
+
+            const reducer = (state, action) => {
+                return state
+            }
+            
+            const initState = {
+                name: "The Rock"
+            }
+
+            const store = createStore(reducer, initState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
         </script>
     </body>
